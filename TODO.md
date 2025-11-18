@@ -1,0 +1,1 @@
+- [ ] Update the packages array in src/pages/LoanPackages.tsx to include 6 packages with fixed savings and loan amounts, and add descriptions for new packages 5 and 6.
