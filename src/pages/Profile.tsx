@@ -54,7 +54,7 @@ export function Profile() {
               alt="NYOTA FUND"
               className="w-10 h-10 rounded-full"
             />
-            <h1 className="text-xl font-bold text-green-700">NYOTA FUND</h1>
+            <h1 className="text-xl font-bold text-green-700">TALA HELA</h1>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -175,7 +175,7 @@ export function Profile() {
       </main>
 
       <footer className="bg-white/70 backdrop-blur-md border-t border-gray-200 py-4 text-center text-gray-600 text-sm">
-        © 2025 <span className="font-semibold text-green-700">NYOTA FUND</span>. All rights reserved.
+        © 2025 <span className="font-semibold text-green-700">TALA HELA</span>. All rights reserved.
       </footer>
     </div>
   );

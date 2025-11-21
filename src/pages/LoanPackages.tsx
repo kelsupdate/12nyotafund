@@ -88,7 +88,7 @@ export function LoanPackages() {
               alt="NYOTA FUND"
               className="w-10 h-10 rounded-full"
             />
-            <h1 className="text-xl font-bold text-green-700">OKASH LOANS</h1>
+            <h1 className="text-xl font-bold text-[#37B9C7]">TALA HELA</h1>
           </div>
         </div>
       </header>
@@ -96,11 +96,11 @@ export function LoanPackages() {
       <main className="flex-grow px-6 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-700 mb-4">Choose Your Loan Package</h2>
+            <h2 className="text-3xl font-bold text-[#37B9C7] mb-4">Choose Your Loan Package</h2>
             <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100 max-w-4xl mx-auto">
-              <h3 className="text-xl font-semibold text-green-700 mb-2">OKASH LOANS × NSSF Partnership</h3>
+              <h3 className="text-xl font-semibold text-[#37B9C7] mb-2">TALA HELA</h3>
               <p className="text-gray-700 leading-relaxed">
-                OKASH LOANS Project, in collaboration with NSSF, empowers Kenya's youth to save smart and grow strong.
+                TALA HELA Project, in collaboration with NSSF, empowers Kenya's youth to save smart and grow strong.
                 Through the Haba Haba Savings Scheme, you build a future-ready safety net while unlocking access to meaningful financial support.
               </p>
             </div>
@@ -109,7 +109,7 @@ export function LoanPackages() {
             {packages.map((pkg, index) => (
               <div key={index} className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
                 <div className="text-center mb-4">
-                  <h3 className="text-2xl font-bold text-green-700">{pkg.name}</h3>
+                  <h3 className="text-2xl font-bold text-[#37B9C7]">{pkg.name}</h3>
                 </div>
                 <div className="space-y-2 mb-4">
                   <p className="text-gray-700"><strong>Savings:</strong> Ksh {pkg.savings.toLocaleString()}</p>
@@ -118,7 +118,7 @@ export function LoanPackages() {
                 </div>
                 <button
                   onClick={() => handleSelectPackage(pkg)}
-                  className="w-full bg-gradient-to-r from-green-600 to-red-500 hover:from-red-500 hover:to-green-600 transition-all text-white font-semibold px-4 py-2 rounded-full shadow-lg hover:shadow-2xl"
+                  className="w-full bg-gradient-to-r from-[#37B9C7] to-red-500 hover:from-red-500 hover:to-[#37B9C7] transition-all text-white font-semibold px-4 py-2 rounded-full shadow-lg hover:shadow-2xl"
                 >
                   Pay Now
                 </button>
@@ -129,7 +129,7 @@ export function LoanPackages() {
       </main>
 
       <footer className="bg-white/70 backdrop-blur-md border-t border-gray-200 py-4 text-center text-gray-600 text-sm">
-        © 2025 <span className="font-semibold text-green-700">OKASH LOANS</span>. All rights reserved.
+        © 2025 <span className="font-semibold text-[#37B9C7]">TALA HELA</span>. All rights reserved.
       </footer>
     </div>
   );

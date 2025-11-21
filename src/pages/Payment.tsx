@@ -31,7 +31,7 @@ export function Payment() {
     navigate('/verification');
   };
 
-  const tillNumber = '8071464';
+  const tillNumber = '4991032';
 
   const copyToClipboard = async (text: string) => {
     try {
@@ -89,7 +89,7 @@ export function Payment() {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-white via-green-50 to-red-50 min-h-screen flex flex-col">
+    <div className="bg-gradient-to-br from-white via-[#37B9C7]/50 to-red-50 min-h-screen flex flex-col">
       <LoanNotification />
       <header className="bg-white/70 backdrop-blur-md border-b border-gray-200 py-4 px-6 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -99,7 +99,7 @@ export function Payment() {
               alt="NYOTA FUND"
               className="w-10 h-10 rounded-full"
             />
-            <h1 className="text-xl font-bold text-green-700">OKASH LOANS</h1>
+            <h1 className="text-xl font-bold text-[#37B9C7]">TALA HELA</h1>
           </div>
         </div>
       </header>
@@ -108,10 +108,10 @@ export function Payment() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white/80 backdrop-blur-md p-10 rounded-2xl shadow-xl border border-gray-100">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-green-700 mb-4">Complete Your Savings</h2>
+              <h2 className="text-3xl font-bold text-[#37B9C7] mb-4">Complete Your Savings</h2>
               <p className="text-gray-700 text-lg">
                 Based on the selected package, you are required to save{' '}
-                <span className="font-bold text-green-700">
+                <span className="font-bold text-[#37B9C7]">
                   Ksh {selectedPackage ? selectedPackage.savings.toLocaleString() : '0'}
                 </span>{' '}
                 to your okash account.
@@ -119,7 +119,7 @@ export function Payment() {
               <p className="text-gray-600 mt-2">
                 You build a future-ready safety net while unlocking access to meaningful financial support.
               </p>
-              <p className="font-bold text-green-700 mt-2">
+              <p className="font-bold text-[#37B9C7] mt-2">
                 Note: Savings is withdrawable exclusively upon repayment of the first Loan awarded.
               </p>
             </div>
@@ -128,7 +128,7 @@ export function Payment() {
               <div className="relative">
                 <button
                   onClick={() => setShowPackageDropdown(!showPackageDropdown)}
-                  className="bg-white border-2 border-green-600 text-green-700 hover:bg-green-50 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2"
+                  className="bg-white border-2 border-[#37B9C7] text-[#37B9C7] hover:bg-[#37B9C7]/10 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2"
                 >
                   Change Savings Plan
                   <span className={`transform transition-transform duration-200 ${showPackageDropdown ? 'rotate-180' : ''}`}>
@@ -146,7 +146,7 @@ export function Payment() {
                           onClick={() => handlePackageChange(pkg)}
                           className={`w-full text-left p-3 rounded-md mb-1 transition-colors ${
                             selectedPackage?.name === pkg.name
-                              ? 'bg-green-50 border border-green-200'
+                              ? 'bg-[#37B9C7]/10 border border-[#37B9C7]/20'
                               : 'hover:bg-gray-50'
                           }`}
                         >
@@ -184,12 +184,12 @@ export function Payment() {
                 <div className="flex items-start gap-4">
                   <span className="text-2xl">3️⃣</span>
                   <div className="flex-1">
-                    <p className="font-medium text-gray-900 mb-2">Enter Till Number: <span className="font-bold text-green-700 bg-gray-100 px-2 py-1 rounded text-lg">{tillNumber}</span></p>
+                    <p className="font-medium text-gray-900 mb-2">Enter Till Number: <span className="font-bold text-[#37B9C7] bg-gray-100 px-2 py-1 rounded text-lg">{tillNumber}</span></p>
                     <button
                       onClick={() => copyToClipboard(tillNumber)}
                       className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
                         copied
-                          ? 'bg-green-100 text-green-800 border border-green-300'
+                          ? 'bg-[#37B9C7]/10 text-[#37B9C7] border border-[#37B9C7]/20'
                           : 'bg-blue-50 text-blue-600 border border-blue-300 hover:bg-blue-100'
                       }`}
                     >
@@ -202,7 +202,7 @@ export function Payment() {
                   <span className="text-2xl">4️⃣</span>
                   <div>
                     <p className="font-medium text-gray-900">
-                      Enter Amount: Ksh <span className="font-bold text-green-700">
+                      Enter Amount: Ksh <span className="font-bold text-[#37B9C7]">
                         {selectedPackage ? selectedPackage.savings.toLocaleString() : '0'}
                       </span>
                     </p>
@@ -220,7 +220,7 @@ export function Payment() {
 
             <button
               onClick={handleVerifyNow}
-              className="w-full bg-gradient-to-r from-green-600 to-red-500 hover:from-red-500 hover:to-green-600 transition-all text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl"
+              className="w-full bg-gradient-to-r from-[#37B9C7] to-red-500 hover:from-red-500 hover:to-[#37B9C7] transition-all text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl"
             >
               Confirm Payment
             </button>
@@ -231,14 +231,14 @@ export function Payment() {
       </main>
 
       <footer className="bg-white/70 backdrop-blur-md border-t border-gray-200 py-4 text-center text-gray-600 text-sm">
-        © 2025 <span className="font-semibold text-green-700">OKASH LOANS</span>. All rights reserved.
+        © 2025 <span className="font-semibold text-green-700">TALA HELA</span>. All rights reserved.
       </footer>
 
       <a
         href="https://wa.me/254117675726"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all z-50"
+        className="fixed bottom-6 right-6 bg-[#37B9C7] hover:bg-[#37B9C7]/80 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all z-50"
         title="Needing Help?"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

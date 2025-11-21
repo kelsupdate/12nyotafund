@@ -41,7 +41,7 @@ export function Home() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-white via-green-50 to-red-50 min-h-screen flex flex-col">
+    <div className="bg-gradient-to-br from-white via-[#37B9C7]/50 to-red-50 min-h-screen flex flex-col">
       <main className="flex-grow flex flex-col items-center justify-center text-center px-6 fade-in">
         <div className="bg-white/80 backdrop-blur-md p-10 rounded-2xl shadow-xl max-w-xl">
           <img
@@ -50,8 +50,8 @@ export function Home() {
             className="w-28 h-28 mx-auto mb-6 rounded-full shadow-lg border border-gray-200"
           />
 
-          <h1 className="text-5xl font-bold text-green-700 mb-4 tracking-wide">
-            OKASH LOANS
+          <h1 className="text-5xl font-bold text-[#37B9C7] mb-4 tracking-wide">
+            TALA HELA
           </h1>
 
           <p className="text-gray-700 text-lg leading-relaxed mb-8">
@@ -62,7 +62,7 @@ export function Home() {
 
           <button
             onClick={() => navigate('/login')}
-            className="inline-block bg-green-600 hover:bg-red-500 transition-all duration-300 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl"
+            className="inline-block bg-[#37B9C7] hover:bg-red-500 transition-all duration-300 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl"
           >
             Next →
           </button>
@@ -70,7 +70,7 @@ export function Home() {
       </main>
 
       <footer className="bg-white/70 backdrop-blur-md border-t border-gray-200 py-4 text-center text-gray-600 text-sm">
-        © 2025 <span className="font-semibold text-green-700">OKASH LOANS</span>. All rights reserved.
+        © 2025 <span className="font-semibold text-[#37B9C7]">OKASH LOANS</span>. All rights reserved.
       </footer>
 
       {showInstallModal && (
@@ -79,11 +79,11 @@ export function Home() {
             <img
               src="/nyotafund.png"
               alt="NYOTA FUND Logo"
-              className="w-20 h-20 mx-auto mb-4 rounded-full shadow-md border border-green-100"
+              className="w-20 h-20 mx-auto mb-4 rounded-full shadow-md border border-[#37B9C7]/20"
             />
 
-            <h3 className="text-2xl font-bold text-green-700 mb-2 tracking-wide">
-              Install OKASH LOANS
+            <h3 className="text-2xl font-bold text-[#37B9C7] mb-2 tracking-wide">
+              Install TALA HELA
             </h3>
             <p className="text-gray-700 mb-4 text-sm leading-relaxed">
               Add OKASH LOANS to your home screen for easy access and offline use.
@@ -98,7 +98,7 @@ export function Home() {
             {installBtnVisible && (
               <button
                 onClick={handleInstallClick}
-                className="bg-gradient-to-r from-green-600 to-red-500 hover:from-red-500 hover:to-green-600 transition-all text-white font-semibold px-6 py-2 rounded-full shadow-lg hover:shadow-2xl mx-auto flex items-center justify-center gap-2 mb-4"
+                className="bg-gradient-to-r from-[#37B9C7] to-red-500 hover:from-red-500 hover:to-[#37B9C7] transition-all text-white font-semibold px-6 py-2 rounded-full shadow-lg hover:shadow-2xl mx-auto flex items-center justify-center gap-2 mb-4"
               >
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/888/888857.png"

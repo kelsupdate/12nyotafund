@@ -47,12 +47,12 @@ export function Register() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-white via-green-50 to-red-50 min-h-screen flex flex-col">
+    <div className="bg-gradient-to-br from-white via-[#37B9C7]/50 to-red-50 min-h-screen flex flex-col">
       <header className="bg-white/70 backdrop-blur-md border-b border-gray-200 py-4 px-6">
         <div className="max-w-4xl mx-auto flex items-center">
           <button
             onClick={() => navigate('/login')}
-            className="flex items-center gap-2 text-green-700 hover:text-green-800 transition-colors"
+            className="flex items-center gap-2 text-[#37B9C7] hover:text-[#37B9C7]/80 transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="font-semibold">Back</span>
@@ -68,12 +68,12 @@ export function Register() {
             className="w-20 h-20 mx-auto mb-6 rounded-full shadow-lg border border-gray-200"
           />
 
-          <h1 className="text-4xl font-bold text-green-700 mb-2 tracking-wide">
+          <h1 className="text-4xl font-bold text-[#37B9C7] mb-2 tracking-wide">
             Create Account
           </h1>
 
           <p className="text-gray-600 mb-8 text-sm">
-            Join OKASH LOANS today
+            Join TALA HELA today
           </p>
 
           {error && (
@@ -112,7 +112,7 @@ export function Register() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:border-green-600 focus:ring-2 focus:ring-green-200 transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:border-[#37B9C7] focus:ring-2 focus:ring-[#37B9C7]/20 transition-all"
               />
             </div>
 
@@ -157,7 +157,7 @@ export function Register() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-green-600 hover:bg-red-500 disabled:bg-gray-400 transition-all duration-300 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl"
+              className="w-full bg-[#37B9C7] hover:bg-red-500 disabled:bg-gray-400 transition-all duration-300 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl"
             >
               {isLoading ? 'Creating account...' : 'Create Account'}
             </button>
@@ -168,7 +168,7 @@ export function Register() {
               Already have an account?{' '}
               <button
                 onClick={() => navigate('/login')}
-                className="text-green-700 hover:text-green-800 font-semibold transition-colors"
+                className="text-[#37B9C7] hover:text-[#37B9C7]/80 font-semibold transition-colors"
               >
                 Sign In
               </button>
@@ -178,7 +178,7 @@ export function Register() {
       </main>
 
       <footer className="bg-white/70 backdrop-blur-md border-t border-gray-200 py-4 text-center text-gray-600 text-sm">
-        © 2025 <span className="font-semibold text-green-700">OKASH LOANS</span>. All rights reserved.
+        © 2025 <span className="font-semibold text-[#37B9C7]">TALA HELA</span>. All rights reserved.
       </footer>
     </div>
   );
